@@ -66,7 +66,7 @@ public class LongestCommonSubsequence {
 
     public static void main(String args[]) {
 
-        if (args.length < 2 || args[0] == "" || args[1] == "" || args[2].equals("")) {
+        if (args.length < 2 || args[0] == "" || args[1] == "" ) {
             System.out.println("Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"");
             return;
         }
