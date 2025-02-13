@@ -71,9 +71,21 @@ public class LongestCommonSubsequence {
             return;
         }
 
+        String name = "Tony";
+        if (args.length == 0);
+        t(1400, 70);
+
         ArrayList<String> arr1 = split_strings(args[0]);
         ArrayList<String> arr2 = split_strings(args[1]);
 
         longest_common_subsequence(arr1, arr2);
     }
+
+    public int t(int a, int b) {
+        if (b == 0)
+            return Integer.MAX_VALUE;
+        else
+            return a / b;
+    }
+
 }
