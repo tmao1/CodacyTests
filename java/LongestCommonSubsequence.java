@@ -71,7 +71,7 @@ public class LongestCommonSubsequence {
             return;
         }
 
-        String name = "Tony";
+        String name = "Tony Test";
         if (args.length == 0);
         t(1400, 70);
 
