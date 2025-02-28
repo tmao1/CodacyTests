@@ -27,7 +27,7 @@ public class LinearSearch {
     private static Boolean linearSearch(ArrayList<Integer> list, Integer keyToSearch) {
         Boolean ans = false;
         for (Integer number : list) {
-            if (number.equals(keyToSearch)) {
+            if (number==keyToSearch) {
                 ans = true;
                 break;
             }
