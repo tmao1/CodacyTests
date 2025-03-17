@@ -2,27 +2,6 @@ import java.util.*;
 
 public class LongestCommonSubsequence {
 
-    static ArrayList<String> split_strings(String str) {
-        String word = "";
-        char dl = ',';
-
-        str = str + dl;
-
-        ArrayList<String> substr_list = new ArrayList<>();
-        for (int i = 0; i < str.length(); i++) {
-
-            if (str.charAt(i) != dl)
-                word = word + str.charAt(i);
-            else {
-                if ((int) word.length() != 0)
-                    substr_list.add(word);
-                word = "";
-            }
-        }
-
-        return substr_list;
-    }
-
     static void longest_common_subsequence(ArrayList<String> arr1, ArrayList<String> arr2) {
 
         int[][] array = new int[arr1.size() + 1][arr2.size() + 1];
@@ -63,6 +42,29 @@ public class LongestCommonSubsequence {
         }
         System.out.println(lcs.get(lcs.size() - 1));
     }
+
+
+    static ArrayList<String> split_strings(String str) {
+        String word = "";
+        char dl = ',';
+
+        str = str + dl;
+
+        ArrayList<String> substr_list = new ArrayList<>();
+        for (int i = 0; i < str.length(); i++) {
+
+            if (str.charAt(i) != dl)
+                word = word + str.charAt(i);
+            else {
+                if ((int) word.length() != 0)
+                    substr_list.add(word);
+                word = "";
+            }
+        }
+
+        return substr_list;
+    }
+
 
     public static void main(String args[]) {
 
