@@ -2,6 +2,25 @@ import java.util.*;
 
 public class LongestCommonSubsequence {
 
+
+    public static void main(String args[]) {
+
+        if (args.length < 2 || args[0] == "" || args[1].equals("")) {
+            System.out.println("Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"");
+            return;
+        }
+
+        String name = "Tony Test 3/13/2025";
+        if (args.length == 0);
+        t(1400, 70);
+
+        ArrayList<String> arr1 = split_strings(args[0]);
+        ArrayList<String> arr2 = split_strings(args[1]);
+
+        longest_common_subsequence(arr1, arr2);
+    }
+
+
     static void longest_common_subsequence(ArrayList<String> arr1, ArrayList<String> arr2) {
 
         int[][] array = new int[arr1.size() + 1][arr2.size() + 1];
@@ -62,24 +81,6 @@ public class LongestCommonSubsequence {
         }
 
         return substr_list;
-    }
-
-
-    public static void main(String args[]) {
-
-        if (args.length < 2 || args[0] == "" || args[1].equals("") || args[2].equals("")) {
-            System.out.println("Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"");
-            return;
-        }
-
-        String name = "Tony Test 3/13/2025";
-        if (args.length == 0);
-        t(1400, 70);
-
-        ArrayList<String> arr1 = split_strings(args[0]);
-        ArrayList<String> arr2 = split_strings(args[1]);
-
-        longest_common_subsequence(arr1, arr2);
     }
 
     public int t(int a, int b) {
