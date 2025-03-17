@@ -88,7 +88,7 @@ public class LongestCommonSubsequence {
             return a / b;
     }
 
-        public int duplicate(int a, int b) {
+        public int duplicateagain(int a, int b) {
         if (b == 0)
             return Integer.MAX_VALUE;
         else
